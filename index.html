@@ -10,6 +10,7 @@
     padding: 0;
     overflow: hidden;
     height: 100%;
+    background-color: #000; /* Optional: dark background for better contrast */
   }
   
   .globe-container {
@@ -28,6 +29,8 @@
     transform: translate(-50%, -50%);
     width: 400px; /* Adjust size of globe */
     height: 400px; /* Adjust size of globe */
+    background: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Globe.png') no-repeat center/cover; /* Use a realistic globe image */
+    border-radius: 50%; /* Make it a circle */
     animation: rotate 60s linear infinite;
   }
   
@@ -43,13 +46,7 @@
 </head>
 <body>
 <div class="globe-container">
-  <div class="globe">
-    <!-- Replace with your globe SVG or Image -->
-    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <!-- Your SVG path or circle representing the globe -->
-      <circle cx="50" cy="50" r="50" fill="#1a73e8" />
-    </svg>
-  </div>
+  <div class="globe"></div>
 </div>
 </body>
 </html>
